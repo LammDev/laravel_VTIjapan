@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="app">
+        <!-- <p>{{ counter }}</p> -->
+        <!-- <button v-on:click="counter++">Click1</button> -->
+        <!-- <button v-on:click='clickHandler($event, "VueJs.3nd")'>Click</button>
+        <p>
+            {{ message }}
+        </p> -->
+
+        <button v-on:click.once="clickHandler">
+            Now1!
+        </button>
+        <button @click.once="clickHandler">
+            Now2!
+        </button>
+        <p>{{ message }}</p>
+
+    </div>
+    <script src = "https://unpkg.com/vue@3.1.5"></script>
+    <script src="https://unpkg.com/axios@0.21.1/dist/axios.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
